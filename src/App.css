@@ -1,5 +1,22 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 .App {
+  margin-top: 10vh;
   text-align: center;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
 }
 
 .App-logo {
@@ -13,26 +30,81 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.showStudents {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  color: grey;
+  width: 200px;
+  margin: 10px;
+}
+
+.battler {
+  width: 200px;
+  height: 250px;
+}
+
+.battlerImg {
+  border-radius: 100px;
+  box-shadow: 0 0 50px 15px #48abe0;
+  width: 100px;
+  height: 100px;
+}
+
+.pokeImg {
+  width: 40px;
+  border-radius: 100px;
+}
+
+form {
+  width: 50vw;
+  margin: auto;
+}
+
+form > input {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.profile {
+  /* border: solid red 2px; */
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.prof {
+  /* border: solid blue 2px; */
+  width: 33%;
+  /* display: flex; */
+  /* justify-content: space-around;
+  align-items: center; */
 }
+
+
+.prof > img {
+  /* border: solid red 2px; */
+  margin: auto;
+  width: 150px;
+}
+
+.studentPic {
+  padding-top: 10vh;
+}
+
+.prof3 {
+  /* border: solid yellow 2px; */
+  width: 60%
+}
+
+
+/* .studentImg {
+} */

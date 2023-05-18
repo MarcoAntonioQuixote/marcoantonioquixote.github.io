@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import AddAStudent from './components/AddAStudent';
+import ShowStudents from './components/ShowStudents';
+import Profile from './components/Profile';
+import PokeProfile from './components/PokeProfile';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            {/* <ShowStudents/> */}
+            <h2>Add/Del a student/pokemon</h2>
+            <h2> <Link to='/students'> See Students </Link> </h2>
+            <Routes>
+                <Route path="/students" element={<ShowStudents/>}/>
+                <Route path="/students/:id" element={<Profile/>}/>
+                <Route path="/addStudent" element={<AddAStudent/>}/>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
